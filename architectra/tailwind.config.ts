@@ -13,6 +13,18 @@ export default {
   			background: 'var(--background)',
   			foreground: 'var(--foreground)'
   		},
+		backgroundImage: {
+			'img-1': "url('/pexels.jpg')",
+			'img-2': "url('/architecture.jpg')",
+			'img-3': "url('/pix.jpg')",
+			'img-4': "url('/img.jpg')",
+			'img-5': "url('/image.jpg')",
+			'img-blur-1': "url('/pexelsblur.png')",
+			'img-blur-2': "url('/imageblur.png)",
+			'img-blur-3': "url('/imgblur.png')",
+			'img-blur-4': "url('/pixblur.png')",
+			'img-blur-5': "url('/architectureblur.png')"
+		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',

@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import { geistMono } from '@/customfonts'
 import ArtCard from './ArtCard'
-
+import NavLinks from './NavLinks'
 
 const Gallery = () => {
   return (
@@ -15,19 +15,23 @@ const Gallery = () => {
                     <Image src={'./filter.svg'} alt='filter' width={25} height={25} className='cursor-pointer' />
                 </div>
             </div>
-              <div className='h-screen w-full grid md:grid-cols-4 grid-cols-2 justify-center'>
-                <ArtCard />
-                <ArtCard />
-                <ArtCard />
-                <ArtCard />
-                <ArtCard />
-                <ArtCard />
-                <ArtCard />
-                <ArtCard />
+              <div className='w-full grid md:gap-11 gap-2 md:grid-cols-4 grid-cols-2 justify-center'>
+                <ArtCard img='pexels.jpg' blurimg='pexelsblur.png' />
+                <ArtCard img='image.jpg' blurimg='imageblur.png' />
+                <ArtCard img='img.jpg' blurimg='imgblur.png' />
+                <ArtCard img='pix.jpg' blurimg='pixblur.png' />
+                <ArtCard img='architecture.jpg' blurimg='architectureblur.png' />
+                <ArtCard img='pic.jpg' blurimg='picblur.png' />
+                <ArtCard img='photo.jpg' blurimg='photoblur.png' />
+                <ArtCard img='structure.jpg' blurimg='structureblur.png' />
+              </div>
+              <div className='flex justify-center items-center mt-7'>
+                <NavLinks text="Get in touch" type="contact" icon="arrow.svg" className="hover:bg-red-500"/>
               </div>
         </div>
     </section>
   )
 }
+
 
 export default Gallery
