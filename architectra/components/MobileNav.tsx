@@ -21,6 +21,7 @@ export function MobileNav() {
         </Link>
       </SheetTrigger>
       <SheetContent className="flex justify-end items-center" side={"left"}>
+        <SheetTitle className="hidden">modal</SheetTitle>
         <div className="h-full w-11/12 flex flex-col justify-start items-center">
           <div className="h-1/3 w-full flex justify-end">
             <NavLinks text="Get in touch" type="contact" icon="arrow.svg" className="hover:bg-red-500"/>
